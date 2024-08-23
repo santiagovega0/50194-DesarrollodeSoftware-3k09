@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: black;
+            padding: 5px;
+            color: white;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        table {
+            width: 200px;
+            text-align: left;
+            border-collapse: separate;
+            border: 1px solid black;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        p.negrita {
+            font-weight: bold;
+        }
+        p.cursiva {
+            font-style: italic;
+        }
+        p.subrayado {
+            text-decoration: underline;
+        }
+        nav.menu{
+            background-color: gray;
+            text-align: left;
+            color: black;
+            padding: 1px;
+        }
+        main {
+            background-color: lightgray;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body> 
+    <!-- LOS NÚMEROS DE LOS TÍTULOS NO ESTAN CON EL MISMO TAMAÑO QUE ESTOS -->
+    <header>
+        <h1>Encabezado Principal</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#Estructura">Estructura</a></li>
+                <li><a href="#Multimedia">Multimedia</a></li>
+                <li><a href="#Formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <ol>
+            <section> <!-- ESTRUCURA -->
+                <li>   
+                    <h1 id="Estructura">Estructura Básica del Documento HTML</h1>
+                    <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título</p>
+                </li>
+            </section>
+            <section> <!-- ENCABEZADOS Y PROPIEDADES -->
+                <li>
+                    <h2>Encabezados y Propiedades del Texto</h2>
+                    <p class="negrita">Este es un texto en negrita</p>
+                    <p class="cursiva">Este es un texto en cursiva</p>
+                    <p class="subrayado">Este es un texto subrayado</p>
+                </li>        
+            </section>
+            <section> <!-- DIVISIONES Y AGRUPACIÓN -->
+                <li>
+                    <h3>Divisiones y Agrupación de Contenido</h3>
+                    <div>
+                        <p><b>Sección 1</b></p>
+                        <p>Contenido de la primera sección agrupada en un div</p>
+                    </div>
+                    <div>
+                        <p><b>Sección 2</b></p>
+                        <p>Contenido de la segunda sección agrupada en un div</p>
+                    </div>
+                </li>
+            </section>
+            <section> <!-- ENLACES Y LISTAS -->
+                <li>
+                    <h4>Enlaces y Listas</h4>
+                    <p>Visita nuestro <a href="https://campus.frm.utn.edu.ar/" target="_blank">sitio web</a> para más información</p>
+                    <p>Enlaces internos:</p>            
+                    <nav>
+                        <ul>
+                            <li><a href="#Estructura">Ir a Estructura</a></li>
+                            <li><a href="#Multimedia">Ir a Multimedia</a></li>
+                            <li><a href="#Formulario">Ir a Formulario</a></li>
+                        </ul>            
+                    </nav>
+                    <p>Lista desordenada:</p>
+                    <ul>
+                        <li>Primer ítem de una lista desordenada</li>
+                        <li>Segundo ítem de una lista desordenada</li>
+                    </ul>
+                    <p>Lista ordenada:</p>
+                    <ol>
+                        <li>Primer ítem de una lista desordenada</li>
+                        <li>Segundo ítem de una lista desordenada</li>
+                    </ol>
+                </li>
+            </section>
+            <section> <!-- ELEMENTOS MULTIMEDIA -->
+                <li>
+                    <h5 id="Multimedia">Elementos Multimedia</h5>
+                    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" alt="Es una imagen" width="300px">
+                    <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4" width="300px" controls></video>
+                    <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+                </li>
+            </section>
+            <section> <!-- TABLAS -->
+                <li>
+                    <h6>Tablas</h6>        
+                    <table>
+                        <thead>                    
+                            <tr>                     
+                                <th>Columna 1</th>
+                                <th>Columna 2</th>
+                            </tr>
+                        </thead>                
+                        <tbody>
+                            <tr>
+                                <td>Dato 1</td>
+                                <td>Dato 2</td>
+                            </tr>
+                            <tr>
+                                <td>Dato 3</td>
+                                <td>Dato 4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </section>
+            <section> <!-- FORMULARIO -->
+                <li>
+                    <h5 id="Formulario">Formulario</h5>
+                    <form>
+                        <label>Nombre: </label><input type="text">
+                        <label>Email: </label><input type="email">
+                        <label>Mensaje: </label><textarea></textarea>
+                        <button type="submit">Enviar</button>
+                        <!-- NO SE BORRAN LOS DATOS DESPUÉS DE TOCAR EL BOTÓN -->
+                    </form>
+                </li>
+            </section>
+        </ol>
+    </main>
+</body>
+</html>
